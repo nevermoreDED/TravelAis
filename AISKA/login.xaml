@@ -1,0 +1,28 @@
+﻿<Page x:Class="AISKA.login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AISKA"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="200"
+      Title="login">
+
+    <Grid>
+        <Border Height="450" Width="800" CornerRadius="0">
+            <Border.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1C1F21" Offset="1"/>
+                    <GradientStop Color="#0984d1" Offset="0.13"/>
+                </RadialGradientBrush>
+            </Border.Background>
+        </Border>
+        <TextBox  x:Name="textBox_login" HorizontalAlignment="Center" Margin="0,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Foreground="White" Content="Введите логин" HorizontalAlignment="Left" Margin="40,26,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Введите пароль" HorizontalAlignment="Left" Margin="40,69,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="enter" Content="Войти" HorizontalAlignment="Left" Margin="40,122,0,0" VerticalAlignment="Top" Click="enter_Click"/>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="88,122,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Page>
